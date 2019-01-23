@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>修法开示</title>
+    <!--IMPORT CSS-->
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <!--REM-->
+    <script>
+        function () {
+            computedFont();
+            window.addEventListener('resize', computedFont, false);
+            function computedFont() {
+                var deviceW = document.documentElement.clientWidth;
+                if (deviceW > 640) return;
+                document.documentElement.style.fontSize = deviceW / 640 * 100 + 'px';
+            }
+        }();
+    </script>
+</head>
+<body>
+<section class="container">
+    <audio src="https://www.noneclear.com/innoz_war_exploded/songs/190120.mp3" preload="auto" id="musicAudio"></audio>
+
+    <div class="backgroundImg"></div>
+    <div class="background"></div>
+
+    <!--HEADER-->
+    <header class="header">
+        <div class="content">
+            <img src="img/singerimg.png" alt="">
+            <h2>
+                <span>修法开示</span>
+                <span> </span>
+            </h2>
+        </div>
+    </header>
+
+    <!--MAIN-->
+    <main class="main">
+        <div class="wrapper">
+       </div>
+    </main>
+
+    <!--FOOTER-->
+    <footer class="footer">
+        <div class="progress">
+            <span class="current">00:00</span>
+            <span class="duration">00:00</span>
+            <div class="proBg">
+            	<div class="dragCircle"></div>
+                <div class="already"></div>
+            </div>
+        </div>
+       <a href="javascript:;" class="musicBtn"></a>
+    </footer>
+</section>
+
+<!--IMPORT JS-->
+<script src="js/zepto.min.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
